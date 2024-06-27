@@ -210,7 +210,6 @@ function screenController() {
       } else {
         playerHeader.textContent = `${result.name} has won the game!`
       }
-
       boardDiv.removeEventListener('click', clickHandler);
     } 
   }
