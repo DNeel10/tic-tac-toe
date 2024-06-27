@@ -204,13 +204,11 @@ function screenController() {
     updateScreen();
 
     if (result) {
+      addReplayButton();
       if (result === 'Draw') {
         playerHeader.textContent = "Draw! Play Again?"
-        addReplayButton();
       } else {
         playerHeader.textContent = `${result.name} has won the game!`
-        addReplayButton();
-
       }
 
       boardDiv.removeEventListener('click', clickHandler);
