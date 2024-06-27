@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.board {
+  margin: 0 auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: .5em;
+}
+
+.cell {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 238.33px;
+  font-size: 2rem;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.activePlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.turn {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.btn {
+  padding: 1em 3em;
+  border-radius: 10px;
+}
